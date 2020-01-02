@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<h1>ENTER YOUR NAME BELOW!</h1>
+	<main>
+		<input type="text" id="namebar" name="username" placeholder="Firstname"><br>
+		<input type="text" id="passbar" name="matnumber" placeholder="Surname">
+		<input id="button" type="button" onclick="submit();" value="Start Quiz">
+	</main>
+</body>
+<script>
+
+function submit() {
+	var nameinput = document.getElementById("namebar").value;
+	var matinput = document.getElementById("passbar").value;
+
+	if(nameinput == "" || matinput == ""){
+		alert("please fill all reqired fields");
+	}else{
+	sessionStorage.setItem("nameSession", nameinput);
+	sessionStorage.setItem("matSession", matinput);
+
+	document.getElementById("namebar").value = "";
+	document.getElementById("passbar").value = "";
+
+	var a = sessionStorage.getItem("nameSession");
+	var b = sessionStorage.getItem("matSession");
+
+	console.log(a,b);
+	location.href='quizchoiesLoop.html';
+	}
+}
+
+
+</script>
+</html>

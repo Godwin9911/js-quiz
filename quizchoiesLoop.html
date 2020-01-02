@@ -1,0 +1,153 @@
+<html>
+<head>
+  <title>quiz</title>
+  <style>
+    *{
+      border-radius: 10px;
+      font-family: tahoma;
+    }
+    body{
+      background-image: url("images (5).jpg");
+      height:100%;
+    	background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	font-family: helvetica;
+    }
+    header{
+      width: 100%;
+      height: 150px;
+
+    }
+    #header{
+      border: 2px solid teal;
+      background-color: teal;
+      width: inherit;
+      height: inherit;
+      margin: auto;
+    }
+    main{
+      width: 100%;
+      height: 350px;
+    }
+    #main{
+      background-color: white;
+      border: 1px solid grey;
+      width: 800px;
+      height: inherit;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      box-shadow: 2px 2px 8px black;
+    }
+    footer{
+      width: 100%;
+      height: 100px;
+    }
+    #footer{
+      width: 800px;
+      height: inherit;
+      margin: auto;
+    }
+    h1{
+      text-align: center;
+      color: white;
+      font-size:3em;
+    }
+    h2{
+      text-align: center;
+      color: black;
+      font-size:2em;
+    }
+    #p1{
+      color: black;
+      font-size:2em;
+      border: 10px;
+      margin-left:25px;
+
+    }
+    #p2{
+      margin-top: 80px;
+      color: #334d4d;
+      font-size:1.2em;
+      border: 10px;
+      text-align: center;
+
+      }
+      #p3{
+        text-align: center;
+        margin-top: -50px;
+      }
+
+
+    #btn1,#btn2{
+      font-size: 1em;
+      border: none;
+      background-color: teal;
+      color: white;
+      padding: 15px 30px;
+      margin-top:10px;
+    }
+    #btn1:hover,#btn2:hover{
+      border: none;
+      background-color: #00cc99;
+      color: white;
+      padding: 15px 30px;
+      margin-top:10px;
+    }
+    #btn1:active,#btn2:active{
+      border: none;
+      background-color: #008060;
+      color: white;
+      padding: 15px 30px;
+      margin-top:10px;
+    }
+
+    #btn1:focus,#btn2:focus{
+      outline: none;
+    }
+
+
+
+    #btn2{
+      float: right;
+    }
+    #p5{
+      font-weight: bold;
+    }
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div id="header">
+      <h1>- QUIZ -</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="main">
+        <p id="p1"><p>
+        <p id="p2">questions<p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div id="footer">
+      <button id='btn1' onclick='submit()'>NEXT ></button>
+      <button id='btn2' onclick='restart()'>RESTART QUIZ</button>
+    </div>
+  </footer>
+</body>
+<script src="quizchoices.js">
+
+</script>
+
+</html>
